@@ -39,7 +39,7 @@
 **SOLUTION:**
 1. Define a new command:
 `\def\NoNumber#1{{\def\alglinenumber##1{}\State #1}\addtocounter{ALG@line}{-1}}`
-2. Put the content of the line, desiring no line number, in the `\NoNumber{}`
+2. Put the content of the line, desiring with no line number, in the `\NoNumber{}`
 
 > ##### See the sample Latex file [algorithm_line_no_number.tex](https://github.com/hadizadeh/Latex/blob/master/algorithm_line_no_number.tex) and [its PDF output](https://github.com/hadizadeh/Latex/blob/master/algorithm_line_no_number.pdf)
 
