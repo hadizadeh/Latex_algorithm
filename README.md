@@ -1,7 +1,7 @@
 # LATEX Tips and Tricks
 **PROBLEM 1:** How one can remove the algorithm number in the caption of an algorithm?
 
-**SOLUTION:** Add \renewcommand{\thealgorithm}{} after \begin{algorithm}
+**SOLUTION:** Add `\renewcommand{\thealgorithm}{}` after `\begin{algorithm}`
 
 > ##### See the sample Latex file [algorithm_caption_no_number.tex](Latex/algorithm_caption_no_number.tex) and [its PDF output](Latex/algorithm_caption_no_number.pdf)
 
@@ -38,8 +38,8 @@
 
 **SOLUTION:**
 1. Define a new command:
-\def\NoNumber#1{{\def\alglinenumber##1{}\State #1}\addtocounter{ALG@line}{-1}}
-2. Put the content of the line, desiring no line number, in the \NoNumber{}
+`\def\NoNumber#1{{\def\alglinenumber##1{}\State #1}\addtocounter{ALG@line}{-1}}`
+2. Put the content of the line, desiring no line number, in the `\NoNumber{}`
 
 > ##### See the sample Latex file [algorithm_line_no_number.tex](Latex/algorithm_caption_no_number.tex) and [its PDF output](Latex/algorithm_caption_no_number.pdf)
 
