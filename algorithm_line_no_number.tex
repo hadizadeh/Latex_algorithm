@@ -1,0 +1,32 @@
+
+% M.R. Hadizadeh (hadizadm@ohio.edu)
+% 07/17/2018
+% algorithm with no line number
+
+\documentclass[11pt]{article}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{color}
+
+\def\NoNumber#1{{\def\alglinenumber##1{}\State #1}\addtocounter{ALG@line}{-1}}
+
+\begin{document}
+
+\begin{algorithm}
+\caption{Test Algorithm}\label{euclid}
+\begin{algorithmic}[1]
+\Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+  \State $r\gets a\bmod b$
+    \While{$r\not=0$}\Comment{We have the answer if r is 0}
+      \State $a\gets b$
+      \State $b\gets r$
+       \State $r\gets a\bmod b$
+       \EndWhile\label{euclidendwhile}
+       \State \textbf{return} $b$\Comment{The gcd is b}
+        \NoNumber{\color{red} This line will not have a number!}
+       \EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}
