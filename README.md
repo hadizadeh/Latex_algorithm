@@ -31,6 +31,7 @@
 
 \end{document}
 ```
+![alt text](https://raw.githubusercontent.com/hadizadeh/Latex/master/algorithm_caption_no_number.png)
 
 
 
@@ -72,5 +73,5 @@
 
 \end{document}
 ```
-
+![alt text](https://raw.githubusercontent.com/hadizadeh/Latex/master/algorithm_line_no_number.png)
 
