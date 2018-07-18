@@ -3,7 +3,7 @@
 
 **SOLUTION:** Add `\renewcommand{\thealgorithm}{}` after `\begin{algorithm}`
 
-> ##### See the sample Latex file [algorithm_caption_no_number.tex](Latex/algorithm_caption_no_number.tex) and [its PDF output](Latex/algorithm_caption_no_number.pdf)
+> ##### See the sample Latex file [algorithm_caption_no_number.tex](https://github.com/hadizadeh/Latex/blob/master/algorithm_caption_no_number.tex) and [its PDF output](https://github.com/hadizadeh/Latex/blob/master/algorithm_line_no_number.pdf)
 
 ``` 
 \documentclass[11pt]{article}
@@ -41,7 +41,7 @@
 `\def\NoNumber#1{{\def\alglinenumber##1{}\State #1}\addtocounter{ALG@line}{-1}}`
 2. Put the content of the line, desiring no line number, in the `\NoNumber{}`
 
-> ##### See the sample Latex file [algorithm_line_no_number.tex](Latex/algorithm_caption_no_number.tex) and [its PDF output](Latex/algorithm_caption_no_number.pdf)
+> ##### See the sample Latex file [algorithm_line_no_number.tex](https://github.com/hadizadeh/Latex/blob/master/algorithm_line_no_number.tex) and [its PDF output](https://github.com/hadizadeh/Latex/blob/master/algorithm_line_no_number.pdf)
 
 ```
 \documentclass[11pt]{article}
